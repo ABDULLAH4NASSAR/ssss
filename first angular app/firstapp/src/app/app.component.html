@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+
+<app-test [a]="arr" (outputdata)="outc($event)" ></app-test>
+
+<div (click)="outc($event)"> {{out}}number</div>
+
+
+<button (click)="tog()" [ngClass]="toggle1? 'a':'b'">b</button>
+<button (click)="tog()" [ngClass]="toggle2? 'a':'b'">c</button>

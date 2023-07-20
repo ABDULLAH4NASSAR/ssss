@@ -1,0 +1,7 @@
+<button (click)="clickable($event)" [ngStyle]="{color:click? 'red':'blue'}">click</button>
+<button  [ngClass]="click? 'red':'blue'">click</button>
+<input (click)="clickable($event)" type="text">
+
+<ul>
+    <li (click)="out(i)" *ngFor="let i of a">{{i}}</li>
+</ul>
